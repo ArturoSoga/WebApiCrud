@@ -1,2 +1,2 @@
 # WebApiCrud
-Una simple forma de hace un Crud en un web api con Entity Framework Core
+Una forma simple de hacer un Crud en un web api con Entity Framework Core
