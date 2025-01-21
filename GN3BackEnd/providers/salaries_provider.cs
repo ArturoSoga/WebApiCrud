@@ -1,4 +1,5 @@
-﻿using GN3BackEnd.Models;
+﻿using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace GN3BackEnd.providers
 {
-    public class salaries_provider
+    public class salaries_provider : ICrud<salaries>
     {
-        public async Task<List<salaries>> CreateSalaries(salaries ObjSalaries)
+        public async Task<List<salaries>> Create(salaries ObjSalaries)
         {
             List<salaries> ListSalaries = new();
 
@@ -27,7 +28,7 @@ namespace GN3BackEnd.providers
                 }
             }
         }
-        public async Task<List<salaries>> ReadSalaries()
+        public async Task<List<salaries>> Read()
         {
             List<salaries> Salaries = new List<salaries>();
             using (DataBaseContext db = new DataBaseContext())
@@ -37,7 +38,7 @@ namespace GN3BackEnd.providers
             return Salaries;
         }
 
-        public async Task<List<salaries>> UpdateSalaries(salaries ObjSalaries)
+        public async Task<List<salaries>> Update(salaries ObjSalaries)
         {
             List<salaries> ListSalaries = new();
             using (DataBaseContext db = new())
@@ -57,10 +58,9 @@ namespace GN3BackEnd.providers
                 }
             }
         }
-
-        //public async Task<List<salaries>> DeleteSalaries()
-        //{
-        //    return null;
-        //}
+        public async Task<List<salaries>> Delete(int Id)
+        {
+            return null;
+        }
     }
 }

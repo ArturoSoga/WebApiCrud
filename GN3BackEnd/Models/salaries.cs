@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using GN3BackEnd.Interfaces;
 
 namespace GN3BackEnd.Models
 {

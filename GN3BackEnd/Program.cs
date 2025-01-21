@@ -1,5 +1,9 @@
+using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
+using GN3BackEnd.providers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,6 +17,7 @@ namespace GN3BackEnd
     {
         public static void Main(string[] args)
         {
+
             CreateHostBuilder(args).Build().Run();
         }
 

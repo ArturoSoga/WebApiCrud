@@ -1,3 +1,6 @@
+using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
+using GN3BackEnd.providers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +29,10 @@ namespace GN3BackEnd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ICrud<cat_departments>, departments_provider>();
+            services.AddScoped<ICrud<employees>, employees_provider>();
+            services.AddScoped<ICrud<salaries>, salaries_provider>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins",

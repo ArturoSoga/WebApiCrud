@@ -1,4 +1,5 @@
-﻿using GN3BackEnd.Models;
+﻿using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
 using GN3BackEnd.providers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,6 +13,13 @@ namespace GN3BackEnd.Controllers
     [Route("[controller]")]
     public class DepartmentsController : ControllerBase
     {
+        private readonly ICrud<cat_departments> _cat_departments;
+
+        private DepartmentsController (ICrud<cat_departments> cat_departments)
+        {
+            _cat_departments = cat_departments;
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -23,8 +31,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                departments_provider provDepartment = new();
-                return await provDepartment.CreateDepartment(objtDepartment);
+                return await _cat_departments.Create(objtDepartment);
             }
             catch
             {
@@ -41,8 +48,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                departments_provider provDepartment = new();
-                return await provDepartment.ReadDepartment();
+                return await _cat_departments.Read();
             }
             catch
             {
@@ -60,9 +66,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-
-                departments_provider provDepartment = new();
-                return await provDepartment.UpdateDepartment(objtDepartment);
+                return await _cat_departments.Update(objtDepartment);
             }
             catch
             {
@@ -81,8 +85,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                departments_provider provDepartment = new();
-                return await provDepartment.DeleteDepartment(Obj.DepaId);
+                return await _cat_departments.Delete(Obj.DepaId);
                 
             }
             catch

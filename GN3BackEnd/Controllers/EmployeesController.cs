@@ -1,4 +1,5 @@
-﻿using GN3BackEnd.Models;
+﻿using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
 using GN3BackEnd.providers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,6 +12,14 @@ namespace GN3BackEnd.Controllers
     [Route("[controller]")]
     public class EmployeesController : ControllerBase
     {
+        private readonly ICrud<employees> Employesprovider;
+
+        private EmployeesController(ICrud<employees> employesprovider)
+        {
+            Employesprovider = employesprovider;
+        }
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -22,8 +31,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                employees_provider provEmployees = new();
-                return (IEnumerable<employees>)await provEmployees.CreateEmployees(objtDepartment);
+                return await Employesprovider.Create(objtDepartment);
             }
             catch
             {
@@ -41,8 +49,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                employees_provider provEmployee = new();
-                return await provEmployee.ReadEmployees();
+                return await Employesprovider.Read();
             }
             catch
             {
@@ -57,12 +64,11 @@ namespace GN3BackEnd.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("UpdateEmployee")]
-        public async Task<IEnumerable<cat_departments>> UpdateEmployeeAsync([FromBody] employees objtEmployees)
+        public async Task<IEnumerable<employees>> UpdateEmployeeAsync([FromBody] employees objtEmployees)
         {
             try
             {
-                employees_provider provEmployees = new();
-                return (IEnumerable<cat_departments>)await provEmployees.UpdateEmployees(objtEmployees);
+                return await Employesprovider.Update(objtEmployees);
             }
             catch
             {
@@ -76,19 +82,18 @@ namespace GN3BackEnd.Controllers
         /// </summary>
         /// <param name="objtDepartment"></param>
         /// <returns></returns>
-        //[HttpPost]
-        //[Route("DeleteEmployee")]
-        //public async Task<IEnumerable<cat_departments>> DeleteEmployeeAsync([FromBody] cat_departments objtDepartment)
-        //{
-        //    try
-        //    {
-        //        employees_provider provEmployees = new();
-        //        //return (IEnumerable<cat_departments>)await provEmployees.DeleteEmployees();
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}
+        [HttpPost]
+        [Route("DeleteEmployee")]
+        public async Task<IEnumerable<employees>> DeleteEmployeeAsync([FromBody] cat_departments objtDepartment)
+        {
+            try
+            {
+                return await Employesprovider.Delete(objtDepartment.DepaId);
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

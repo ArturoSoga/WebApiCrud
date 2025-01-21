@@ -1,4 +1,5 @@
-﻿using GN3BackEnd.Models;
+﻿using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
 using GN3BackEnd.providers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,6 +12,11 @@ namespace GN3BackEnd.Controllers
     [Route("[controller]")]
     public class SalariesController : ControllerBase
     {
+        private readonly ICrud<salaries> _salariesRepository;
+
+        private SalariesController (ICrud<salaries> salariesRepository) {
+            _salariesRepository = salariesRepository;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -22,8 +28,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                salaries_provider provSalaries = new();
-                return (IEnumerable<salaries>)await provSalaries.CreateSalaries(ObjSalaries);
+                return await _salariesRepository.Create(ObjSalaries);
             }
             catch
             {
@@ -40,8 +45,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                salaries_provider provSalaries = new();
-                return (IEnumerable<salaries>)await provSalaries.ReadSalaries();
+                return await _salariesRepository.Read();
             }
             catch
             {
@@ -59,8 +63,7 @@ namespace GN3BackEnd.Controllers
         {
             try
             {
-                salaries_provider provSalaries = new();
-                return (IEnumerable<salaries>)await provSalaries.UpdateSalaries(ObjSalaries);
+                return await _salariesRepository.Update(ObjSalaries);
             }
             catch
             {
@@ -72,19 +75,18 @@ namespace GN3BackEnd.Controllers
         /// </summary>
         /// <param name="objtDepartment"></param>
         /// <returns></returns>
-        //[HttpPost]
-        //[Route("DeleteSalaries")]
-        //public async Task<IEnumerable<salaries>> DeleteSalariesAsync([FromBody] salaries ObjSalaries)
-        //{
-        //    try
-        //    {
-        //        salaries_provider provSalaries = new();
-        //        return (IEnumerable<salaries>)await provSalaries.DeleteSalaries(ObjSalaries);
-        //    }
-        //    catch
-        //    {
-        //        return null;
-        //    }
-        //}
+        [HttpPost]
+        [Route("DeleteSalaries")]
+        public async Task<IEnumerable<salaries>> DeleteSalariesAsync([FromBody] salaries ObjSalaries)
+        {
+            try
+            {
+                return await _salariesRepository.Delete(ObjSalaries.SalaId);
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

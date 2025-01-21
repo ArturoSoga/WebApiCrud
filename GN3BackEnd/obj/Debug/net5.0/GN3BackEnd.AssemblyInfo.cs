@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GN3BackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a71f1d75e3fa9d76e327835be50b6ad2aa3257d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GN3BackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GN3BackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

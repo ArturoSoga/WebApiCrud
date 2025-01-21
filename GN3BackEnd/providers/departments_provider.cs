@@ -1,4 +1,5 @@
-﻿using GN3BackEnd.Models;
+﻿using GN3BackEnd.Interfaces;
+using GN3BackEnd.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace GN3BackEnd.providers
 {
-    public class departments_provider
+    public class departments_provider : ICrud<cat_departments>
     {
-        public async Task<List<cat_departments>> CreateDepartment(cat_departments objtDepartment)
+        public async Task<List<cat_departments>> Create(cat_departments objtDepartment)
         {
             List<cat_departments> listDepartments = new();
             using (DataBaseContext db = new())
             {
                 try {
-                    await db.cat_departments.AddAsync(objtDepartment);
+                     await db.cat_departments.AddAsync(objtDepartment);
                     db.SaveChanges();
                     listDepartments.Add(objtDepartment);
 
@@ -26,21 +27,23 @@ namespace GN3BackEnd.providers
                 }
             }
         }
-        public async Task<List<cat_departments>> ReadDepartment()
+
+        public async Task<List<cat_departments>> Read()
         {
             List<cat_departments> listDepartments = new();
             using (DataBaseContext db = new())
             {
-                listDepartments = await (from d in db.cat_departments select new cat_departments()
-                {
-                    DepaActive = d.DepaActive,
-                    DepaDescripcion = d.DepaDescripcion,
-                    DepaId = d.DepaId,
-                }).ToListAsync();
+                listDepartments = await (from d in db.cat_departments
+                                         select new cat_departments()
+                                         {
+                                             DepaActive = d.DepaActive,
+                                             DepaDescripcion = d.DepaDescripcion,
+                                             DepaId = d.DepaId,
+                                         }).ToListAsync();
             }
             return listDepartments;
         }
-        public async Task<List<cat_departments>> UpdateDepartment(cat_departments objtDepartment)
+        public async Task<List<cat_departments>> Update(cat_departments objtDepartment)
         {
             List<cat_departments> listDepartments = new();
             using (DataBaseContext db = new())
@@ -60,7 +63,7 @@ namespace GN3BackEnd.providers
                 }
             }
         }
-        public async Task<List<cat_departments>> DeleteDepartment(int IdDepartment)
+        public async Task<List<cat_departments>> Delete(int IdDepartment)
         {
             List<cat_departments> listDepartments = new();
             using (DataBaseContext db = new())
@@ -68,12 +71,12 @@ namespace GN3BackEnd.providers
                 try
                 {
                     cat_departments department = await (from d in db.cat_departments
-                                                 select new cat_departments()
-                                                 {
-                                                     DepaActive = false,
-                                                     DepaDescripcion = d.DepaDescripcion,
-                                                     DepaId = d.DepaId,
-                                                 }).Where(i => i.DepaId == IdDepartment).FirstOrDefaultAsync();
+                                                        select new cat_departments()
+                                                        {
+                                                            DepaActive = false,
+                                                            DepaDescripcion = d.DepaDescripcion,
+                                                            DepaId = d.DepaId,
+                                                        }).Where(i => i.DepaId == IdDepartment).FirstOrDefaultAsync();
 
                     db.Update(department);
                     db.SaveChanges();

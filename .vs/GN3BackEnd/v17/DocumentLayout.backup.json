@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\providers\\salaries_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\providers\\salaries_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\interfaces\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\interfaces\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\controllers\\salariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\controllers\\salariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\providers\\departments_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\providers\\departments_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\providers\\salaries_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\providers\\salaries_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\models\\salaries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\models\\salaries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\providers\\employees_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\providers\\employees_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|c:\\users\\laptop de arturo\\desktop\\desarrollodesoftware\\gn3backend\\gn3backend\\models\\cat_departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63F20E63-F00D-4AB6-8BD3-E944147F1107}|GN3BackEnd\\GN3BackEnd.csproj|solutionrelative:gn3backend\\models\\cat_departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +55,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "salaries_provider.cs",
-              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\salaries_provider.cs",
-              "RelativeDocumentMoniker": "GN3BackEnd\\providers\\salaries_provider.cs",
-              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\salaries_provider.cs",
-              "RelativeToolTip": "GN3BackEnd\\providers\\salaries_provider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAlAAAAAAAAAA==",
+              "Title": "ICrud.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Interfaces\\ICrud.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Interfaces\\ICrud.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Interfaces\\ICrud.cs",
+              "RelativeToolTip": "GN3BackEnd\\Interfaces\\ICrud.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA4wAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T00:59:02.821Z",
+              "WhenOpened": "2025-01-20T21:00:15.803Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -50,34 +74,115 @@
               "RelativeDocumentMoniker": "GN3BackEnd\\Controllers\\SalariesController.cs",
               "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Controllers\\SalariesController.cs",
               "RelativeToolTip": "GN3BackEnd\\Controllers\\SalariesController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwBkAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T01:12:45.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "departments_provider.cs",
-              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\departments_provider.cs",
-              "RelativeDocumentMoniker": "GN3BackEnd\\providers\\departments_provider.cs",
-              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\departments_provider.cs",
-              "RelativeToolTip": "GN3BackEnd\\providers\\departments_provider.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T01:12:35.566Z",
+              "WhenOpened": "2025-01-20T01:12:45.684Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "salaries.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Models\\salaries.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Models\\salaries.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Models\\salaries.cs",
+              "RelativeToolTip": "GN3BackEnd\\Models\\salaries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T00:54:14.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "salaries_provider.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\salaries_provider.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\providers\\salaries_provider.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\salaries_provider.cs",
+              "RelativeToolTip": "GN3BackEnd\\providers\\salaries_provider.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwDwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T00:47:48.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "GN3BackEnd\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T23:27:48.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Startup.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Startup.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Startup.cs",
+              "RelativeToolTip": "GN3BackEnd\\Startup.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:29:27.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "employees_provider.cs",
               "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\employees_provider.cs",
               "RelativeDocumentMoniker": "GN3BackEnd\\providers\\employees_provider.cs",
               "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\providers\\employees_provider.cs",
               "RelativeToolTip": "GN3BackEnd\\providers\\employees_provider.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCYAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T01:02:14.207Z"
+              "WhenOpened": "2025-01-20T01:02:14.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Program.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Program.cs",
+              "RelativeToolTip": "GN3BackEnd\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T21:30:03.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "GN3BackEnd\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T22:47:23.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cat_departments.cs",
+              "DocumentMoniker": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Models\\cat_departments.cs",
+              "RelativeDocumentMoniker": "GN3BackEnd\\Models\\cat_departments.cs",
+              "ToolTip": "C:\\Users\\Laptop De Arturo\\Desktop\\DesarrolloDeSoftWare\\GN3BackEnd\\GN3BackEnd\\Models\\cat_departments.cs",
+              "RelativeToolTip": "GN3BackEnd\\Models\\cat_departments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T23:19:10.239Z",
+              "EditorCaption": ""
             }
           ]
         }
